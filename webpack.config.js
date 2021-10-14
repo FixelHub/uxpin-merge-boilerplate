@@ -10,7 +10,7 @@ module.exports = {
   },
   resolve: {
     modules: [__dirname, 'node_modules'],
-    extensions: ['*', '.js', '.jsx', '.json'],
+    extensions: ['*', '.js', '.jsx', '.json', '.tsx', '.ts'],
   },
   devtool: 'source-map',
   module: {
@@ -32,7 +32,7 @@ module.exports = {
       },
       {
         loader: 'babel-loader',
-        test: /\.(js|jsx)$/,
+        test: [/\.tsx?$/, /\.ts$/, /\.(js|jsx)$/],
         exclude: /node_modules/,
       },
       {

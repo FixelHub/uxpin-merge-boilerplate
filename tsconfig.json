@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "checkJs": false /* .js ファイルは型チェックしない */,
+    "isolatedModules": true,
+    "jsx": "preserve" /* JSX の記法は変換しない */,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "noEmit": true /* tsc では型検査のみを行い、出力は gulp で行う */,
+    "baseUrl": "./src",
+    "paths": {
+      "*": ["*"]
+    },
+    "resolveJsonModule": true /* pages/termsに使われている.json用 */
+  },
+  "exclude": ["node_modules"],
+  "include": ["./src"]
+}
