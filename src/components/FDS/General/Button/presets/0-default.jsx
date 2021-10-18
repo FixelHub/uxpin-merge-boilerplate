@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../Button.tsx';
+// import Button from '../Button';
 
 export default (
   <Button
@@ -8,6 +9,6 @@ export default (
     icon=""
     iconOnly={false}
     disabled={false}
-    label="Hello Button"
+    label="Hello button"
   />
 );

@@ -1,18 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 // import './styles.scss';
 
-type Props = {
-  type: "basic" | "primary" | "outline" | "cancel" | "text";
-  size?: "tiny" | "small" | "medium" | "large" | "giant";
-  icon?: string;
-  iconOnly?: boolean;
-  disabled?: boolean;
-  onClickButton?: () => void;
-  label: string;
-  children?: React.ReactNode;
-};
-
-const Button: React.FC<Props> = (props: Props) => {
+const TestButton = (props) => {
   function buttonClass() {
     const classList = ['fds-btn'];
     if (props.type) {
@@ -56,4 +46,15 @@ const Button: React.FC<Props> = (props: Props) => {
   );
 };
 
-export default Button;
+TestButton.propTypes = {
+  type: PropTypes.oneOf(['basic', 'primary', 'outline', 'cancel', 'text']),
+  size: PropTypes.oneOf(['tiny', 'small', 'medium', 'large', 'giant']),
+  icon: PropTypes.string,
+  label: PropTypes.string,
+  iconOnly: PropTypes.bool,
+  disabled: PropTypes.bool,
+  onClickButton: PropTypes.func,
+  children: PropTypes.node,
+};
+
+export default TestButton;
