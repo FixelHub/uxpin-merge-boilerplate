@@ -24,4 +24,4 @@ jobs:
       #     command: npm run test
       - run:
           name: 'Push to UXPin'
-          command: npm run push --develop
+          command: npm run push
