@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../Button';
+import Button from '../Button.tsx';
 // import Button from '../Button';
 
 export default (
@@ -8,7 +8,7 @@ export default (
     size="tiny"
     icon=""
     iconOnly={false}
-    disabled={false}>
-    Click Me
-  </Button>
+    disabled={false}
+    label="Hello button"
+  />
 );

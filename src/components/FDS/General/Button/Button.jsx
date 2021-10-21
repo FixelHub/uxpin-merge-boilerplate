@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import './styles.scss';
 
-const TestButton = (props) => {
+const Button = (props) => {
   function buttonClass() {
     const classList = ['fds-btn'];
     if (props.type) {
@@ -14,6 +13,9 @@ const TestButton = (props) => {
       classList.push(`fds-btn--${props.size}`);
     } else {
       classList.push('fds-btn--medium');
+    }
+    if (props.isRound) {
+      classList.push('fds-btn--round');
     }
     if (props.icon) {
       classList.push('fds-btn--icon');
@@ -35,26 +37,25 @@ const TestButton = (props) => {
 
   return (
     <button
-      type="button"
       className={buttonClass()}
       onClick={props.onClickButton}
-      disabled={props.disabled}>
+      disabled={props.disabled}
+      type="button">
       {props.icon && <span className={iconClass()} />}
-      {props.label}
       {props.children}
     </button>
   );
 };
 
-TestButton.propTypes = {
+Button.propTypes = {
   type: PropTypes.oneOf(['basic', 'primary', 'outline', 'cancel', 'text']),
   size: PropTypes.oneOf(['tiny', 'small', 'medium', 'large', 'giant']),
+  isRound: PropTypes.bool,
   icon: PropTypes.string,
-  label: PropTypes.string,
   iconOnly: PropTypes.bool,
   disabled: PropTypes.bool,
   onClickButton: PropTypes.func,
   children: PropTypes.node,
 };
 
-export default TestButton;
+export default Button;
