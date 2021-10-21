@@ -9,6 +9,6 @@ export default (
     icon=""
     iconOnly={false}
     disabled={false}>
-    Click Me
+    Click Me!
   </Button>
 );
