@@ -12,7 +12,8 @@ jobs:
       - image: circleci/node:10.15-stretch-browsers
     working_directory: ~/project/
     steps:
-      - git fetch && git checkout master
+      - git fetch
+      - git checkout master
       - checkout
       - run:
           name: 'Install dependencies'
