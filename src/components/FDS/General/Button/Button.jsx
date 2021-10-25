@@ -63,6 +63,7 @@ Button.defaultProps = {
   size: 'tiny',
   iconOnly: false,
   disabled: false,
+  children: 'Hello',
 };
 
 export default Button;
