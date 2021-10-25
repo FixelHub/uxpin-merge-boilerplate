@@ -13,6 +13,7 @@ jobs:
     working_directory: ~/project/
     steps:
       - checkout
+      - run: git fetch && git checkout develop
       - run:
           name: 'Install dependencies'
           command: npm install

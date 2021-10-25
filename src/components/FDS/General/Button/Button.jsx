@@ -58,11 +58,4 @@ Button.propTypes = {
   children: PropTypes.node,
 };
 
-Button.defaultProps = {
-  type: 'primary',
-  size: 'tiny',
-  iconOnly: false,
-  disabled: false,
-};
-
 export default Button;
