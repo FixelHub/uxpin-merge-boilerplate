@@ -2030,10 +2030,10 @@
     "lodash.unescape" "4.0.1"
     "semver" "5.5.0"
 
-"@uxpin/merge-cli@^2.7.3":
-  "integrity" "sha512-RpSl6oosg+jk8DRYzCdJMa4scfqzUeZSEW5fa3irJ8TGVQckiVLvTX8NpCzonXMa+kpWLrYD0U+2esL7UFMmJA=="
-  "resolved" "https://registry.npmjs.org/@uxpin/merge-cli/-/merge-cli-2.7.8.tgz"
-  "version" "2.7.8"
+"@uxpin/merge-cli@^2.7.9":
+  "integrity" "sha512-z0GBT6bB9UjlIOLgSqK+9uKGMxWO5A4Gzw5UQfjyMj6uoOg8SxYBmdEUMTsQZty4GooQt7dwg6Y7fX1iZq/TOg=="
+  "resolved" "https://registry.npmjs.org/@uxpin/merge-cli/-/merge-cli-2.7.9.tgz"
+  "version" "2.7.9"
   dependencies:
     "@babel/core" "^7.2.2"
     "@babel/plugin-proposal-class-properties" "^7.2.3"
