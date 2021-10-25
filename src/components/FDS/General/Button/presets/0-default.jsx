@@ -4,11 +4,12 @@ import Button from '../Button';
 
 export default (
   <Button
+    uxpId="general/button"
     type="primary"
     size="tiny"
     icon=""
     iconOnly={false}
     disabled={false}>
-    Click Me!
+    Click Me FDS
   </Button>
 );
