@@ -48,7 +48,7 @@ const Button = (props) => {
 };
 
 Button.propTypes = {
-  type: PropTypes.oneOf(['basic', 'primary', 'outline', 'cancel', 'text']),
+  type: PropTypes.oneOf(['basic', 'primary', 'outline', 'cancel', 'text', 'unused']),
   size: PropTypes.oneOf(['tiny', 'small', 'medium', 'large', 'giant']),
   isRound: PropTypes.bool,
   icon: PropTypes.string,
@@ -56,6 +56,13 @@ Button.propTypes = {
   disabled: PropTypes.bool,
   onClickButton: PropTypes.func,
   children: PropTypes.node,
+};
+
+Button.defaultProps = {
+  type: 'primary',
+  size: 'tiny',
+  iconOnly: false,
+  disabled: false,
 };
 
 export default Button;
