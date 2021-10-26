@@ -9,6 +9,7 @@ module.exports = {
           'src/components/FDS/General/Icon/Icon.jsx',
           'src/components/FDS/General/Checkbox/Checkbox.jsx',
           'src/components/FDS/General/HeadNavigation/HeadNavigation.jsx',
+          'src/components/FDS/testing-grounds/components/data-display/tooltip/Tooltip.jsx',
           // 'src/components/Camera/Camera.js',
           // 'src/components/CreditCard/CreditCard.jsx',
           // 'src/components/Greeting/Greeting.js',

@@ -4,6 +4,7 @@ import Checkbox from '../Checkbox';
 
 export default (
   <Checkbox
+    uxpId="general/checkbox"
     label="Check me out"
   />
 );
