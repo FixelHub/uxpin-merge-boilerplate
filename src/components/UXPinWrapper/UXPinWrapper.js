@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
-import '../FDS/css/style.scss';
+import '../FDS/css/style-no-urls.css';
 
 export default function UXPinWrapper({ children }) {
   // const fileref = document.createElement('link');
@@ -8,5 +8,6 @@ export default function UXPinWrapper({ children }) {
   // fileref.setAttribute('type', 'text/css');
   // fileref.setAttribute('href', '/components/FDS/css/style.css');
   // document.head.appendChild(fileref);
+  // TODO: Append material-icons
   return children;
 }
