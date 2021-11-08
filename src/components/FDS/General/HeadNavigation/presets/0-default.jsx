@@ -4,8 +4,10 @@ import HeadNavigation from '../HeadNavigation';
 
 export default (
   <HeadNavigation
+    uxpId="general/headnavi"
     type="brandlogo"
     singleButtonTitle="Click Me"
-    iconButtons={[]}
-  />
+    iconButtons={[]}>
+    This is my Navi
+  </HeadNavigation>
 );
