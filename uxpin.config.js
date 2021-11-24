@@ -21,6 +21,7 @@ module.exports = {
           'src/components/FDS/components/Pagination/Pagination.jsx',
           'src/components/FDS/components/PaginationTool/PaginationTool.jsx',
           'src/components/FDS/components/RadioButton/RadioButton.jsx',
+          'src/components/FDS/components/Table/Table.jsx',
           // 'src/components/Camera/Camera.js',
           // 'src/components/CreditCard/CreditCard.jsx',
           // 'src/components/Greeting/Greeting.js',
