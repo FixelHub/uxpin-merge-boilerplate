@@ -160,7 +160,10 @@
     "quotes": 0,
     "jsx-quotes": 0,
     "react/jsx-closing-bracket-location": 0,
-    "jsx-a11y/click-events-have-key-events": "warn",
-    "operator-linebreak": 0
+    "jsx-a11y/click-events-have-key-events": "off",
+    "operator-linebreak": 0,
+    "jsx-a11y/label-has-for": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "arrow-body-style": "off"
   }
 }
