@@ -3,6 +3,7 @@ import DropdownMenu from '../DropdownMenu';
 
 export default (
   <DropdownMenu
+    uxpId='fds-dropdown-menu'
     options={['コピー', '移動', '共有']}
     onClick={() => {}}
     targetId='1'

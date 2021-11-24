@@ -602,47 +602,16 @@ template {
   border-width: 1px;
   display: inline-flex;
   align-items: center;
-  background-color: transparent;
-  border-color: transparent;
-  transition-duration: 0.3s;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
-  padding: 8px;
-  font-family: 'Open Sans', 'Noto Sans CJK JP', 'Helvetica Neue', Arial,
-    'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
   line-height: 1em;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12),
     0px 1px 3px rgba(0, 0, 0, 0.2);
-  width: auto;
   font-weight: bold;
-  transition-property: background-color;
-}
-.fds-btn .fds-btn--left .fds-icon {
-  width: 16px;
-  height: 16px;
-  font-size: 16px;
-}
-.fds-btn .fds-btn--left .fds-icon .material-icons {
-  font-size: 16px;
-  position: relative;
-  right: 8px;
-  top: 2px;
-}
-.fds-btn .fds-btn--right .fds-icon {
-  width: 16px;
-  height: 16px;
-  font-size: 16px;
-}
-.fds-btn .fds-btn--right .fds-icon .material-icons {
-  font-size: 16px;
-  position: relative;
-  left: 8px;
-  top: 2px;
+  padding: 0;
 }
 .fds-btn .fds-icon {
   color: #fff;
+  font-size: 16px;
 }
 .fds-btn--full-width {
   justify-content: center;
@@ -650,13 +619,11 @@ template {
 }
 .fds-btn--large {
   font-size: 16px;
-  padding: 10.5px 16px;
-  height: 44px;
+  min-height: 44px;
 }
 .fds-btn--medium {
-  padding: 7px 16px;
   font-size: 10px;
-  height: 32px;
+  min-height: 32px;
 }
 .fds-btn--primary {
   background: #6a98f6;
@@ -665,45 +632,41 @@ template {
   color: #fff;
 }
 .fds-btn--small {
-  padding: 3px 16px;
   font-size: 10px;
-  height: 24px;
+  min-height: 24px;
 }
 .fds-btn--tiny {
-  padding: 1px 16px;
   font-size: 10px;
-  height: 20px;
+  min-height: 20px;
+}
+.fds-btn--with-left-icon {
+  padding-right: 16px;
+}
+.fds-btn--with-right-icon {
+  padding-left: 16px;
+}
+.fds-btn--without-icon {
+  padding: 0 16px;
 }
 .fds-btn-icon {
   color: rgba(0, 0, 0, 0.87);
   line-height: 1.1em;
-  padding: 8px;
-  transition-duration: 0.3s;
-  font-weight: 400;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   font-size: 14px;
   display: inline-flex;
-  transition-property: background-color;
-  font-family: 'Open Sans', 'Noto Sans CJK JP', 'Helvetica Neue', Arial,
-    'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
-  background-color: transparent;
   align-items: center;
   border: none;
+  font-weight: 400;
+  background-color: transparent;
 }
 .fds-btn-icon .fds-btn-icon__item--large .fds-icon {
   font-size: 32px;
-  height: 32px;
-  width: 32px;
 }
 .fds-btn-icon .fds-btn-icon__item--medium .fds-icon {
-  width: 24px;
-  height: 24px;
   font-size: 24px;
 }
 .fds-btn-icon .fds-btn-icon__item--small .fds-icon {
-  width: 16px;
-  height: 16px;
   font-size: 16px;
 }
 .fds-btn-icon,
@@ -743,21 +706,8 @@ template {
   border-radius: 50%;
   padding: 8px;
 }
-.fds-btn-icon.fds-btn-icon--circle:disabled .fds-icon,
-.fds-btn-icon.fds-btn-icon--square:disabled .fds-icon {
-  color: #fff;
-}
 .fds-btn-icon.fds-btn-icon--circle:disabled,
-.fds-btn-icon.fds-btn-icon--square:disabled {
-  background-color: #dbe5fa;
-  box-shadow: none;
-  color: #fff;
-  border-color: #dbe5fa;
-}
-.fds-btn-icon.fds-btn-icon--circle:disabled:hover .fds-icon,
-.fds-btn-icon.fds-btn-icon--square:disabled:hover .fds-icon {
-  color: #fff;
-}
+.fds-btn-icon.fds-btn-icon--square:disabled,
 .fds-btn-icon.fds-btn-icon--circle:disabled:hover,
 .fds-btn-icon.fds-btn-icon--square:disabled:hover {
   background-color: #dbe5fa;
@@ -765,8 +715,9 @@ template {
   color: #fff;
   border-color: #dbe5fa;
 }
-.fds-btn-icon.fds-btn-icon--circle:disabled:hover:active .fds-icon,
-.fds-btn-icon.fds-btn-icon--square:disabled:hover:active .fds-icon {
+.fds-btn-icon.fds-btn-icon--circle:disabled:hover .fds-icon,
+.fds-btn-icon.fds-btn-icon--square:disabled:hover .fds-icon,
+.fds-btn-icon.fds-btn-icon--circle:disabled:hover:active .fds-icon {
   color: #fff;
 }
 .fds-btn-icon.fds-btn-icon--circle:disabled:hover:active,
@@ -818,6 +769,22 @@ template {
 }
 .fds-btn-icon.fds-btn-icon--default:hover:active .fds-icon {
   color: #616161;
+}
+.fds-btn-icon.fds-btn-icon--square:disabled:hover:active .fds-icon {
+  color: #fff;
+}
+.fds-btn-left .fds-icon,
+.fds-btn-right .fds-icon {
+  font-size: 16px;
+}
+.fds-btn-left,
+.fds-btn-right {
+  width: 16px;
+  height: 16px;
+  margin: 0 8px;
+}
+.fds-btn-left--without-icon {
+  height: 16px;
 }
 .fds-btn.fds-btn--primary:disabled,
 .fds-btn.fds-btn--primary:disabled:hover .fds-icon,
@@ -930,10 +897,7 @@ template {
   border: rgba(0, 0, 0, 0.16);
   min-width: 480px;
   padding: 32px;
-  max-height: 543px;
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
-}
-.fds-dialog {
   max-height: 600px;
 }
 .fds-dialog .fds-dialog__body {
@@ -1032,10 +996,6 @@ template {
   color: #6a98f6;
   margin-right: 24px;
   font-size: 12px;
-}
-.fds-drawer {
-  height: auto;
-  flex-shrink: 0;
 }
 .fds-drawer {
   width: 192px;
@@ -1345,11 +1305,11 @@ template {
   align-items: center;
   color: #ffffff;
   padding: 12px 24px;
-  min-height: 46px;
   background: #6a98f6;
+  height: 46px;
 }
 .fds-header .fds-btn--text {
-  color: #ffffff;
+  color: #fff;
 }
 .fds-header .fds-btn-icon.fds-btn-icon--default .fds-icon {
   color: #ffffff;
@@ -1394,26 +1354,15 @@ template {
   user-select: none;
   color: #9e9e9e;
 }
-.fds-layout-body {
-  background-color: #fafafa;
-  padding: 18px 32px 72px;
-  width: 100%;
+.fds-label {
+  font-size: 12px;
+  color: #616161;
 }
-.fds-layout-body .fds-table-actions {
-  display: flex;
-  align-items: center;
+.fds-label--error {
+  color: #d50000;
 }
-.fds-layout-body .fds-table-container {
-  margin-bottom: 20px;
-}
-.fds-layout-body .fds-table-controller {
-  display: flex;
-  margin-bottom: 20px;
-  align-items: center;
-  justify-content: space-between;
-}
-.fds-layout-body-sidemenu {
-  display: flex;
+.fds-label--highlighted {
+  color: #6a98f6;
 }
 .fds-logo {
   display: block;
@@ -1435,15 +1384,6 @@ template {
   background-image: url('../image/fds-logo-ver.svg');
   height: 209px;
   width: 144px;
-}
-.fds-page-table-list {
-  display: flex;
-  flex-direction: column;
-  min-width: 1280px;
-}
-.fds-page-table-list .fds-header {
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
-  position: relative;
 }
 .fds-pagination {
   display: inline-flex;
@@ -1695,14 +1635,8 @@ template {
   color: rgba(0, 0, 0, 0.6);
 }
 .fds-table-container {
-  display: flex;
-  width: 1080px;
-}
-.fds-table-container {
-  overflow: auto;
-}
-.fds-table-container {
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+  margin-bottom: 20px;
 }
 .fds-table__filter {
   transition: 0.3s transform;
