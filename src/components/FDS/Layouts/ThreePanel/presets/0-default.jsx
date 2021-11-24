@@ -3,9 +3,9 @@ import ThreePanelLayout from '../ThreePanel';
 
 export default (
   <ThreePanelLayout
-    uxpId="layouts/threepanel"
-    top="top"
-    leftNavi="leftNavi"
-    main="main"
+    uxpId='layouts/threepanel'
+    top='top'
+    leftNavi='leftNavi'
+    main='main'
   />
 );

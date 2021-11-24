@@ -5,12 +5,9 @@ module.exports = {
       {
         name: 'FDS Prototype',
         include: [
-          'src/components/FDS/General/Button/Button.jsx',
-          'src/components/FDS/General/Icon/Icon.jsx',
-          'src/components/FDS/General/Checkbox/Checkbox.jsx',
-          'src/components/FDS/General/HeadNavigation/HeadNavigation.jsx',
-          'src/components/FDS/testing-grounds/components/data-display/tooltip/Tooltip.jsx',
-          'src/components/FDS/Layouts/ThreePanel/ThreePanel.jsx',
+          'src/components/FDS/components/Button/Button.jsx',
+          'src/components/FDS/components/Icon/Icon.jsx',
+          'src/components/FDS/components/Avatars/Avatars.jsx',
           // 'src/components/Camera/Camera.js',
           // 'src/components/CreditCard/CreditCard.jsx',
           // 'src/components/Greeting/Greeting.js',
@@ -19,6 +16,7 @@ module.exports = {
           // 'src/components/Table/Table.js',
           // 'src/components/TrendLine/TrendLine.js',
           // 'src/components/SimpleMap/SimpleMap.js',
+          'src/components/FDS/layouts/ThreePanel/ThreePanel.jsx',
         ],
       },
       // {

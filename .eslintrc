@@ -1,10 +1,7 @@
 {
   "extends": "airbnb",
   "parser": "babel-eslint",
-  "plugins": [
-    "react",
-    "jest"
-  ],
+  "plugins": ["react", "jest"],
   "env": {
     "browser": true,
     "jest": true
@@ -73,41 +70,11 @@
       1,
       {
         "groups": [
-          [
-            "+",
-            "-",
-            "*",
-            "/",
-            "%",
-            "**"
-          ],
-          [
-            "&",
-            "|",
-            "^",
-            "~",
-            "<<",
-            ">>",
-            ">>>"
-          ],
-          [
-            "==",
-            "!=",
-            "===",
-            "!==",
-            ">",
-            ">=",
-            "<",
-            "<="
-          ],
-          [
-            "&&",
-            "||"
-          ],
-          [
-            "in",
-            "instanceof"
-          ]
+          ["+", "-", "*", "/", "%", "**"],
+          ["&", "|", "^", "~", "<<", ">>", ">>>"],
+          ["==", "!=", "===", "!==", ">", ">=", "<", "<="],
+          ["&&", "||"],
+          ["in", "instanceof"]
         ],
         "allowSamePrecedence": true
       }
@@ -128,22 +95,10 @@
     "operator-assignment": 0,
     "no-bitwise": 2,
     // TODO: change complexity to 10 after refactor
-    "complexity": [
-      2,
-      100
-    ],
-    "max-depth": [
-      2,
-      6
-    ],
-    "max-len": [
-      2,
-      200
-    ],
-    "arrow-parens": [
-      2,
-      "always"
-    ],
+    "complexity": [2, 100],
+    "max-depth": [2, 6],
+    "max-len": [2, 200],
+    "arrow-parens": [2, "always"],
     "object-shorthand": [
       1,
       "always",
@@ -162,19 +117,22 @@
     "prefer-rest-params": 1,
     "prefer-spread": 1,
     "global-require": 0,
-    "sort-imports": [2, {
-      "ignoreCase": false,
-      "ignoreDeclarationSort": true,
-      "ignoreMemberSort": false
-    }],
-    "react/forbid-prop-types": 0,
-    "react/jsx-closing-bracket-location": [
+    "sort-imports": [
       2,
       {
-        "selfClosing": "line-aligned",
-        "nonEmpty": "after-props"
+        "ignoreCase": false,
+        "ignoreDeclarationSort": true,
+        "ignoreMemberSort": false
       }
     ],
+    "react/forbid-prop-types": 0,
+    // "react/jsx-closing-bracket-location": [
+    //   2,
+    //   {
+    //     "selfClosing": "line-aligned",
+    //     "nonEmpty": "after-props"
+    //   }
+    // ],
     "react/jsx-no-target-blank": 1,
     "react/no-is-mounted": 1,
     "react/no-find-dom-node": 1,
@@ -196,6 +154,11 @@
     "react/destructuring-assignment": 0,
     "react/jsx-filename-extension": 0,
     "react/no-array-index-key": 0,
-    "react/no-access-state-in-setstate": 0
+    "react/no-access-state-in-setstate": 0,
+    //FDS rules
+    "semi": 0,
+    "quotes": 0,
+    "jsx-quotes": 0,
+    "react/jsx-closing-bracket-location": 0
   }
 }
