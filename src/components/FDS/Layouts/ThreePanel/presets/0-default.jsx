@@ -1,9 +1,9 @@
 import React from 'react';
-import ThreePanelLayout from '../ThreePanel';
+import ThreePanel from '../ThreePanel';
 
 export default (
-  <ThreePanelLayout
-    uxpId='layouts/threepanel'
+  <ThreePanel
+    uxpId='fds-threepanel'
     top='top'
     leftNavi='leftNavi'
     main='main'

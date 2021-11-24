@@ -26,7 +26,7 @@ module.exports = {
           // 'src/components/Table/Table.js',
           // 'src/components/TrendLine/TrendLine.js',
           // 'src/components/SimpleMap/SimpleMap.js',
-          'src/components/FDS/layouts/ThreePanel/ThreePanel.jsx',
+          // 'src/components/FDS/layouts/ThreePanel/ThreePanel.jsx',
         ],
       },
       // {
