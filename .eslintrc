@@ -164,6 +164,7 @@
     "operator-linebreak": 0,
     "jsx-a11y/label-has-for": "off",
     "jsx-a11y/label-has-associated-control": "off",
-    "arrow-body-style": "off"
+    "arrow-body-style": "off",
+    "jsx-a11y/no-static-element-interactions": "off"
   }
 }

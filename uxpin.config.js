@@ -11,6 +11,7 @@ module.exports = {
           'src/components/FDS/components/Button/Button.jsx',
           'src/components/FDS/components/Checkbox/Checkbox.jsx',
           'src/components/FDS/components/Dialog/Dialog.jsx',
+          'src/components/FDS/components/Disclosure/Disclosure.jsx',
           'src/components/FDS/components/Icon/Icon.jsx',
           'src/components/FDS/components/IconButton/IconButton.jsx',
           // 'src/components/Camera/Camera.js',
