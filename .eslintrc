@@ -138,13 +138,13 @@
     "react/no-find-dom-node": 1,
     "react/no-string-refs": 1,
     "react/no-unescaped-entities": 1,
-    "react/no-unused-prop-types": [
-      2,
-      {
-        "customValidators": [],
-        "skipShapeProps": true
-      }
-    ],
+    // "react/no-unused-prop-types": [
+    //   2,
+    //   {
+    //     "customValidators": [],
+    //     "skipShapeProps": true
+    //   }
+    // ],
     "react/prefer-es6-class": 1,
     "react/prefer-stateless-function": 1,
     "react/prop-types": 1,
@@ -166,6 +166,8 @@
     "jsx-a11y/label-has-associated-control": "off",
     "arrow-body-style": "off",
     "jsx-a11y/no-static-element-interactions": "off",
-    "implicit-arrow-linebreak": 0
+    "implicit-arrow-linebreak": 0,
+    /** For some reason it's not recognizing props inside functions */
+    "react/no-unused-prop-types": "warn"
   }
 }

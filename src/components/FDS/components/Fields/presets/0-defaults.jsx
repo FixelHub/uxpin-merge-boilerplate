@@ -3,6 +3,7 @@ import Fields from '../Fields';
 
 export default (
   <Fields
+    uxpId='fds-fields'
     value=''
     onSetValue={() => {}}
     disabled={false}

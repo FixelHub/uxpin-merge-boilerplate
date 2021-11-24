@@ -63,7 +63,7 @@ Button.defaultProps = {
   size: 'medium',
   icon: 'add',
   iconPosition: 'left',
-  children: 'button',
+  children: 'Button',
   isFullWidth: false,
   disabled: false,
   onClick: () => {},
