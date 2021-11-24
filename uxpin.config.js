@@ -9,6 +9,7 @@ module.exports = {
           'src/components/FDS/components/Icon/Icon.jsx',
           'src/components/FDS/components/Avatars/Avatars.jsx',
           'src/components/FDS/components/Badges/Badges.jsx',
+          'src/components/FDS/components/Breadcrumbs/Breadcrumbs.jsx',
           // 'src/components/Camera/Camera.js',
           // 'src/components/CreditCard/CreditCard.jsx',
           // 'src/components/Greeting/Greeting.js',

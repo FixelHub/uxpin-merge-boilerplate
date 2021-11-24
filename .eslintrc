@@ -161,6 +161,6 @@
     "jsx-quotes": 0,
     "react/jsx-closing-bracket-location": 0,
     "jsx-a11y/click-events-have-key-events": "warn",
-    "jsx-a11y/no-static-element-interactions": "warn"
+    "operator-linebreak": 0
   }
 }
