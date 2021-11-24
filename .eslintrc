@@ -155,10 +155,12 @@
     "react/jsx-filename-extension": 0,
     "react/no-array-index-key": 0,
     "react/no-access-state-in-setstate": 0,
-    //FDS rules
+    /** FDS rules */
     "semi": 0,
     "quotes": 0,
     "jsx-quotes": 0,
-    "react/jsx-closing-bracket-location": 0
+    "react/jsx-closing-bracket-location": 0,
+    "jsx-a11y/click-events-have-key-events": "warn",
+    "jsx-a11y/no-static-element-interactions": "warn"
   }
 }
