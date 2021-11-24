@@ -5,13 +5,14 @@ module.exports = {
       {
         name: 'FDS Prototype',
         include: [
-          'src/components/FDS/components/Button/Button.jsx',
-          'src/components/FDS/components/Icon/Icon.jsx',
           'src/components/FDS/components/Avatars/Avatars.jsx',
           'src/components/FDS/components/Badges/Badges.jsx',
           'src/components/FDS/components/Breadcrumbs/Breadcrumbs.jsx',
+          'src/components/FDS/components/Button/Button.jsx',
           'src/components/FDS/components/Checkbox/Checkbox.jsx',
           'src/components/FDS/components/Dialog/Dialog.jsx',
+          'src/components/FDS/components/Icon/Icon.jsx',
+          'src/components/FDS/components/IconButton/IconButton.jsx',
           // 'src/components/Camera/Camera.js',
           // 'src/components/CreditCard/CreditCard.jsx',
           // 'src/components/Greeting/Greeting.js',
