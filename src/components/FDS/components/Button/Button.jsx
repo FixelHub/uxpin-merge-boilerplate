@@ -18,11 +18,26 @@ const Button = (props) => {
     if (props.isFullWidth) {
       classList.push('fds-btn--full-width');
     }
+    if (props.iconPosition === 'right') {
+      classList.push('fds-btn--with-right-icon');
+    }
+    if (props.iconPosition === 'left') {
+      classList.push('fds-btn--with-left-icon');
+    }
+    if (props.icon === '' || !props.icon) {
+      classList.push('fds-btn--without-icon');
+    }
     return classList.join(' ');
   }
 
-  function getIconPosition() {
-    return !props.iconPosition ? 'left' : props.iconPosition;
+  function getLeftIconClass() {
+    let classList = '';
+    if (props.icon && props.iconPosition === 'left') {
+      classList = 'fds-btn-left';
+    } else {
+      classList = 'fds-btn-left--without-icon';
+    }
+    return classList;
   }
 
   return (
@@ -32,14 +47,14 @@ const Button = (props) => {
       disabled={props.disabled}
       onClick={() => props.onClick()}
     >
-      {props.icon && getIconPosition() === 'left' && (
-        <div className='fds-btn--left'>
+      <div className={getLeftIconClass()}>
+        {props.icon && props.iconPosition === 'left' && (
           <Icon icon={props.icon} />
-        </div>
-      )}
+        )}
+      </div>
       {props.children}
-      {props.icon && getIconPosition() === 'right' && (
-        <div className='fds-btn--right'>
+      {props.icon && props.iconPosition === 'right' && (
+        <div className='fds-btn-right'>
           <Icon icon={props.icon} />
         </div>
       )}

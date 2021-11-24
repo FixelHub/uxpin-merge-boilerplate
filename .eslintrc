@@ -66,19 +66,19 @@
       }
     ],
     "func-names": 0,
-    "no-mixed-operators": [
-      1,
-      {
-        "groups": [
-          ["+", "-", "*", "/", "%", "**"],
-          ["&", "|", "^", "~", "<<", ">>", ">>>"],
-          ["==", "!=", "===", "!==", ">", ">=", "<", "<="],
-          ["&&", "||"],
-          ["in", "instanceof"]
-        ],
-        "allowSamePrecedence": true
-      }
-    ],
+    // "no-mixed-operators": [
+    //   1,
+    //   {
+    //     "groups": [
+    //       ["+", "-", "*", "/", "%", "**"],
+    //       ["&", "|", "^", "~", "<<", ">>", ">>>"],
+    //       ["==", "!=", "===", "!==", ">", ">=", "<", "<="],
+    //       ["&&", "||"],
+    //       ["in", "instanceof"]
+    //     ],
+    //     "allowSamePrecedence": true
+    //   }
+    // ],
     "no-restricted-syntax": [
       1,
       "ForInStatement",
@@ -156,17 +156,19 @@
     "react/no-array-index-key": 0,
     "react/no-access-state-in-setstate": 0,
     /** FDS rules */
-    "semi": 0,
-    "quotes": 0,
-    "jsx-quotes": 0,
-    "react/jsx-closing-bracket-location": 0,
-    "jsx-a11y/click-events-have-key-events": "off",
-    "operator-linebreak": 0,
-    "jsx-a11y/label-has-for": "off",
-    "jsx-a11y/label-has-associated-control": "off",
     "arrow-body-style": "off",
-    "jsx-a11y/no-static-element-interactions": "off",
     "implicit-arrow-linebreak": 0,
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "jsx-a11y/label-has-for": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-quotes": 0,
+    "operator-linebreak": 0,
+    "quotes": 0,
+    "react/jsx-closing-bracket-location": 0,
+    "react/jsx-one-expression-per-line": "off",
+    "semi": 0,
+    "no-mixed-operators": 0,
     /** For some reason it's not recognizing props inside functions */
     "react/no-unused-prop-types": "warn"
   }

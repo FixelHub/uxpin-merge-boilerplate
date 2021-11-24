@@ -1,0 +1,38 @@
+.fds-three-panel {
+  width: 1440px;
+  height: 790px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fds-three-panel__top {
+  display: flex;
+  flex-direction: column;
+
+  background-color: black;
+}
+
+.fds-three-panel__bottom {
+  display: flex;
+  flex-direction: row;
+  background-color: gray;
+  width: 100%;
+  height: 100%;
+}
+
+.fds-three-panel__bottom-left {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.fds-three-panel__bottom-main {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: silver;
+}
+
+.fds-three-panel__bottom-main-child {
+  margin-bottom: 20px;
+}

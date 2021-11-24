@@ -10,7 +10,7 @@ export default (
       icon: 'tune',
       text: '編集する',
     }}
-    isDefaultOpen={false}
+    isDefaultOpen
   >
     Test
   </Disclosure>
