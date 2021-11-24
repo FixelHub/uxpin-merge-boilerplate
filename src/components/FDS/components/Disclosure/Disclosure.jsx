@@ -64,7 +64,7 @@ Disclosure.defaultProps = {
     text: '編集する',
   },
   children: <p>test</p>,
-  isDefaultOpen: false,
+  isDefaultOpen: true,
 };
 
 export default Disclosure;

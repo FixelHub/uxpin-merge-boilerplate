@@ -3,7 +3,7 @@ module.exports = {
   components: {
     categories: [
       {
-        name: 'FDS Prototype',
+        name: 'Components',
         include: [
           'src/components/FDS/components/Avatars/Avatars.jsx',
           'src/components/FDS/components/Badges/Badges.jsx',
@@ -22,16 +22,13 @@ module.exports = {
           'src/components/FDS/components/PaginationTool/PaginationTool.jsx',
           'src/components/FDS/components/RadioButton/RadioButton.jsx',
           'src/components/FDS/components/Table/Table.jsx',
-          // 'src/components/Camera/Camera.js',
-          // 'src/components/CreditCard/CreditCard.jsx',
-          // 'src/components/Greeting/Greeting.js',
-          // 'src/components/Icon/Icon.js',
-          // 'src/components/MediaPlayer/MediaPlayer.js',
-          // 'src/components/Table/Table.js',
-          // 'src/components/TrendLine/TrendLine.js',
-          // 'src/components/SimpleMap/SimpleMap.js',
-          // 'src/components/FDS/layouts/ThreePanel/ThreePanel.jsx',
+          'src/components/FDS/components/Tabs/Tabs.jsx',
+          'src/components/FDS/components/Tags/Tags.jsx',
         ],
+      },
+      {
+        name: 'Layouts',
+        include: ['src/components/FDS/layouts/ThreePane/ThreePane.jsx'],
       },
       // {
       //   name: 'General',
