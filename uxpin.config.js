@@ -18,6 +18,8 @@ module.exports = {
           'src/components/FDS/components/HeadNavigation/HeadNavigation.jsx',
           'src/components/FDS/components/Icon/Icon.jsx',
           'src/components/FDS/components/IconButton/IconButton.jsx',
+          'src/components/FDS/components/Pagination/Pagination.jsx',
+          'src/components/FDS/components/PaginationTool/PaginationTool.jsx',
           // 'src/components/Camera/Camera.js',
           // 'src/components/CreditCard/CreditCard.jsx',
           // 'src/components/Greeting/Greeting.js',
