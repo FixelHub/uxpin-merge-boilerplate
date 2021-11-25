@@ -64,8 +64,8 @@ DropdownMenu.defaultProps = {
   onClick: () => {},
   targetId: '1',
   dropDownPosition: {
-    x: 1,
-    y: 1,
+    x: 0,
+    y: 0,
   },
   resetDropdown: () => {},
 };

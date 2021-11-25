@@ -12,6 +12,6 @@ export default (
     disabled={false}
     onClick={() => {}}
   >
-    Button
+    button
   </Button>
 );

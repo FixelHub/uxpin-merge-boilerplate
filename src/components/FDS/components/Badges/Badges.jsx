@@ -41,11 +41,11 @@ const Badges = (props) => {
       <span className={getFdsBadgesIconClass()}>
         {props.icon && <Icon icon={props.icon} />}
       </span>
-      {props.text}
+      <div className='fds-badges__text'>{props.text}</div>
       {props.onClear && (
         <span
           className={getFdsBadgesClearBtnClass()}
-          onClick={() => props.onClear()}
+          onClick={() => props.onClear(props.id)}
         >
           <Icon icon='clear' />
         </span>
@@ -55,6 +55,7 @@ const Badges = (props) => {
 };
 
 Badges.propTypes = {
+  id: PropTypes.number,
   color: PropTypes.oneOf(['primary', 'red', 'green', 'orange', 'gray', 'blue']),
   isFadedOff: PropTypes.bool,
   text: PropTypes.string,
@@ -63,6 +64,7 @@ Badges.propTypes = {
 };
 
 Badges.defaultProps = {
+  id: null,
   color: 'red',
   text: 'text',
   isFadedOff: true,

@@ -86,7 +86,7 @@ Avatars.propTypes = {
     'notifications',
   ]),
   size: PropTypes.oneOf(['small', 'medium', 'large']),
-  imageUrl: PropTypes.strings,
+  imageUrl: PropTypes.string,
   initials: PropTypes.string,
   color: PropTypes.string,
   showNotification: PropTypes.bool,
