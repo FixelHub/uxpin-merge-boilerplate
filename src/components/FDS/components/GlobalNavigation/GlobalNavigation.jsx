@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import IconButton from '../IconButton/IconButton';
 
-const HeadNavigation = (props) => {
+const GlobalNavigation = (props) => {
   function title() {
     switch (props.type) {
       case 'back':
@@ -52,18 +52,18 @@ const HeadNavigation = (props) => {
   );
 };
 
-HeadNavigation.propTypes = {
+GlobalNavigation.propTypes = {
   type: PropTypes.oneOf(['back', 'simple', 'brandlogo']),
   control: PropTypes.node,
   onClick: PropTypes.func,
   children: PropTypes.node,
 };
 
-HeadNavigation.defaultProps = {
+GlobalNavigation.defaultProps = {
   type: 'back',
-  control: 'control',
-  children: 'Header Text',
+  control: <React.Fragment />,
+  children: <React.Fragment />,
   onClick: () => {},
 };
 
-export default HeadNavigation;
+export default GlobalNavigation;

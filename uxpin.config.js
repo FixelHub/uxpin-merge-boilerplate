@@ -15,7 +15,7 @@ module.exports = {
           'src/components/FDS/components/DrawerMenu/DrawerMenu.jsx',
           'src/components/FDS/components/DropdownMenu/DropdownMenu.jsx',
           'src/components/FDS/components/Fields/Fields.jsx',
-          'src/components/FDS/components/HeadNavigation/HeadNavigation.jsx',
+          'src/components/FDS/components/GlobalNavigation/GlobalNavigation.jsx',
           'src/components/FDS/components/Icon/Icon.jsx',
           'src/components/FDS/components/IconButton/IconButton.jsx',
           'src/components/FDS/components/Pagination/Pagination.jsx',

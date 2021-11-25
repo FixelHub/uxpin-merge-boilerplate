@@ -3,24 +3,31 @@ import PropTypes from 'prop-types';
 import Icon from '../Icon/Icon';
 
 const Tags = (props) => {
+  function getLabelByItsLength() {
+    if (props.label.length > 11) {
+      return `${props.label.substr(0, 10)}...`;
+    }
+    return props.label;
+  }
+
   return (
     <div className={`fds-tags fds-tags--${props.type}`}>
       <div className='fds-tags__content'>
-        <span
+        <div
           className={`fds-tags__label ${
-            props.rightIcon
+            props.onClear
               ? 'fds-tags__label--with-icon'
               : 'fds-tags__label--without-icon'
           }`}
         >
-          {props.label}
-        </span>
-        {props.rightIcon && (
+          {getLabelByItsLength()}
+        </div>
+        {props.onClear && (
           <span
-            onClick={() => props.rightIcon.onClick()}
+            onClick={() => props.onClear(props.id)}
             className={`fds-tags__icon fds-tags__icon--${props.type}`}
           >
-            <Icon icon={props.rightIcon.icon} />
+            <Icon icon='clear' />
           </span>
         )}
       </div>
@@ -30,17 +37,16 @@ const Tags = (props) => {
 
 Tags.propTypes = {
   type: PropTypes.oneOf(['default', 'filled']),
+  id: PropTypes.number,
   label: PropTypes.string,
-  rightIcon: PropTypes.shape({
-    icon: PropTypes.string,
-    onClick: PropTypes.func,
-  }),
+  onClear: PropTypes.func,
 };
 
 Tags.defaultProps = {
+  id: null,
   type: 'default',
   label: 'ラベル',
-  rightIcon: null,
+  onClear: null,
 };
 
 export default Tags;

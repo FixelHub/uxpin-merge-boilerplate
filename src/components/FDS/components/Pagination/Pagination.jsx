@@ -159,7 +159,7 @@ Pagination.propTypes = {
 
 Pagination.defaultProps = {
   showPagesInfo: true,
-  totalItems: 100,
+  totalItems: 0,
   itemsPerPage: 10,
   currentPage: 1,
   onChange: () => {},

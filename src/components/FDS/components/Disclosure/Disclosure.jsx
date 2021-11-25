@@ -7,39 +7,37 @@ const Disclosure = (props) => {
 
   return (
     <div className='fds-disclosure'>
-      <div className='fds-disclosure__control'>
-        <div className='fds-disclosure__left-block'>
-          <span className='fds-disclosure__left-block-text'>{props.title}</span>
-          <span
-            className='fds-disclosure__left-block-icon'
-            title={props.tooltipText}
+      <div className='fds-disclosure__container'>
+        <div className='fds-disclosure__control'>
+          <div className='fds-disclosure__left-block'>
+            <span className='fds-disclosure__left-block-text'>
+              {props.title}
+            </span>
+            <span
+              className='fds-disclosure__left-block-icon'
+              title={props.tooltipText}
+            >
+              <Icon icon='help' />
+            </span>
+          </div>
+          <div
+            className='fds-disclosure__right-block'
+            onClick={() => setIsOpen(!isOpen)}
           >
-            <Icon icon='help' />
-          </span>
+            <span className='fds-disclosure__right-block-drop-up-icon'>
+              <Icon icon={`arrow_drop_${isOpen ? 'down' : 'up'}`} />
+            </span>
+          </div>
         </div>
         <div
-          className='fds-disclosure__right-block'
-          onClick={() => setIsOpen(!isOpen)}
+          className={`fds-disclosure__content ${
+            isOpen && props.children
+              ? 'fds-disclosure__content--open'
+              : 'fds-disclosure__content--closed'
+          }`}
         >
-          <span className='fds-disclosure__right-block-icon'>
-            <Icon icon={props.toggler.icon} />
-          </span>
-          <span className='fds-disclosure__right-block-text'>
-            {props.toggler.text}
-          </span>
-          <span className='fds-disclosure__right-block-drop-up-icon'>
-            <Icon icon={`arrow_drop_${isOpen ? 'down' : 'up'}`} />
-          </span>
+          {props.children}
         </div>
-      </div>
-      <div
-        className={`fds-disclosure__content ${
-          isOpen && props.children
-            ? 'fds-disclosure__content'
-            : 'fds-disclosure__content--closed'
-        }`}
-      >
-        {props.children}
       </div>
     </div>
   );
@@ -48,10 +46,6 @@ const Disclosure = (props) => {
 Disclosure.propTypes = {
   title: PropTypes.string,
   tooltipText: PropTypes.string,
-  toggler: PropTypes.shape({
-    icon: PropTypes.string,
-    text: PropTypes.string,
-  }),
   children: PropTypes.node,
   isDefaultOpen: PropTypes.bool,
 };
@@ -59,12 +53,8 @@ Disclosure.propTypes = {
 Disclosure.defaultProps = {
   title: '検索',
   tooltipText: '項目を検索します',
-  toggler: {
-    icon: 'tune',
-    text: '編集する',
-  },
-  children: <p>test</p>,
-  isDefaultOpen: true,
+  children: <p>disclosure contents</p>,
+  isDefaultOpen: false,
 };
 
 export default Disclosure;

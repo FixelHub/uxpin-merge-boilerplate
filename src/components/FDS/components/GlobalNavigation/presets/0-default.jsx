@@ -1,13 +1,13 @@
 import React from 'react';
-import HeadNavigation from '../HeadNavigation';
+import GlobalNavigation from '../GlobalNavigation';
 
 export default (
-  <HeadNavigation
+  <GlobalNavigation
     uxpId='fds-head-navigation'
     type='back'
     control='control'
     onClick={() => {}}
   >
     Header Text
-  </HeadNavigation>
+  </GlobalNavigation>
 );
