@@ -33,12 +33,26 @@ const ThreePane = (props) => {
     return 'Main';
   }
 
+  function makeWhite(requiredNumber) {
+    if (props.children && requiredNumber === 0) {
+      return ' fds-three-panel__panel--placed';
+    }
+    if (props.children && props.children[requiredNumber]) {
+      return ' fds-three-panel__panel--placed';
+    }
+    return '';
+  }
+
   return (
     <div className='fds-three-panel'>
-      <div className='fds-three-panel__top'>{getTop()}</div>
+      <div className={`fds-three-panel__top${makeWhite(0)}`}>{getTop()}</div>
       <div className='fds-three-panel__bottom'>
-        <div className='fds-three-panel__bottom-left'>{getLeft()}</div>
-        <div className='fds-three-panel__bottom-main'>{getMain()}</div>
+        <div className={`fds-three-panel__bottom-left${makeWhite(1)}`}>
+          {getLeft()}
+        </div>
+        <div className={`fds-three-panel__bottom-main${makeWhite(2)}`}>
+          {getMain()}
+        </div>
       </div>
     </div>
   );

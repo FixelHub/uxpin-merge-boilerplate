@@ -8,7 +8,6 @@
 .fds-three-panel__top {
   display: flex;
   flex-direction: column;
-
   background-color: black;
 }
 
@@ -35,4 +34,8 @@
 
 .fds-three-panel__bottom-main-child {
   margin-bottom: 20px;
+}
+
+.fds-three-panel__panel--placed {
+  background-color: rgb(250, 250, 250);
 }
