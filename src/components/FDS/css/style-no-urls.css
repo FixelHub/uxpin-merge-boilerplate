@@ -504,10 +504,10 @@ template {
 }
 .fds-badges--primary {
   background: #dbe5fa;
-  color: #6a98f6;
+  color: #f688b0;
 }
 .fds-badges--primary-faded-off {
-  background: #6a98f6;
+  background: #f688b0;
   color: #fff;
 }
 .fds-badges--red {
@@ -560,7 +560,7 @@ template {
 }
 .fds-badges-icon--primary .fds-icon,
 .fds-badges-clear-btn--primary .fds-icon {
-  color: #6a98f6;
+  color: #f688b0;
 }
 .fds-badges-icon--red .fds-icon,
 .fds-badges-clear-btn--red .fds-icon {
@@ -595,7 +595,7 @@ template {
 }
 .fds-breadcrumb .fds-breadcrumb__item .fds-breadcrumb__link {
   text-decoration: none;
-  color: #6a98f6;
+  color: #f688b0;
 }
 .fds-breadcrumb .fds-breadcrumb__item .fds-icon {
   width: 16px;
@@ -632,8 +632,8 @@ template {
   min-height: 32px;
 }
 .fds-btn--primary {
-  background: #6a98f6;
-  border-color: #6a98f6;
+  background: #f688b0;
+  border-color: #f688b0;
   outline: none;
   color: #fff;
 }
@@ -687,9 +687,9 @@ template {
 }
 .fds-btn-icon--circle,
 .fds-btn-icon--square {
-  background: #6a98f6;
+  background: #f688b0;
   color: #fff;
-  border-color: #6a98f6;
+  border-color: #f688b0;
 }
 .fds-btn-icon--large {
   height: 40px;
@@ -735,13 +735,13 @@ template {
 }
 .fds-btn-icon.fds-btn-icon--circle:hover,
 .fds-btn-icon.fds-btn-icon--square:hover {
-  background-color: #4a7ee8;
-  border-color: #4a7ee8;
+  background-color: #e365a2;
+  border-color: #e365a2;
 }
 .fds-btn-icon.fds-btn-icon--circle:hover:active,
 .fds-btn-icon.fds-btn-icon--square:hover:active {
-  background-color: #1646aa;
-  border-color: #1646aa;
+  background-color: #b83684;
+  border-color: #b83684;
 }
 .fds-btn-icon.fds-btn-icon--default {
   border-radius: 50%;
@@ -809,50 +809,50 @@ template {
   outline: none;
 }
 .fds-btn.fds-btn--primary:hover {
-  background-color: #4a7ee8;
-  border-color: #4a7ee8;
+  background-color: #e365a2;
+  border-color: #e365a2;
 }
 .fds-btn.fds-btn--primary:hover:active {
   outline: none;
-  border-color: #1646aa;
-  background-color: #1646aa;
+  border-color: #b83684;
+  background-color: #b83684;
 }
 .fds-btn.fds-btn--secondary {
   background-color: #fff;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
-  border-color: #6a98f6;
-  color: #6a98f6;
+  border-color: #f688b0;
+  color: #f688b0;
 }
 .fds-btn.fds-btn--secondary .fds-icon {
-  color: #6a98f6;
+  color: #f688b0;
 }
 .fds-btn.fds-btn--secondary:disabled .fds-icon,
 .fds-btn.fds-btn--secondary:disabled:hover .fds-icon,
 .fds-btn.fds-btn--secondary:disabled:hover:active .fds-icon {
-  color: #b7cbf6;
+  color: #ffdee4;
 }
 .fds-btn.fds-btn--secondary:disabled,
 .fds-btn.fds-btn--secondary:disabled:hover,
 .fds-btn.fds-btn--secondary:disabled:hover:active {
   background: #fff;
-  border-color: #b7cbf6;
-  color: #b7cbf6;
+  border-color: #ffdee4;
+  color: #ffdee4;
 }
 .fds-btn.fds-btn--secondary:hover {
-  border-color: #4a7ee8;
-  color: #4a7ee8;
+  border-color: #e365a2;
+  color: #e365a2;
   background: #fff;
 }
 .fds-btn.fds-btn--secondary:hover .fds-icon {
-  color: #4a7ee8;
+  color: #e365a2;
 }
 .fds-btn.fds-btn--secondary:hover:active {
   background-color: #f5f5f5;
-  border-color: #1646aa;
-  color: #1646aa;
+  border-color: #b83684;
+  color: #b83684;
 }
 .fds-btn.fds-btn--secondary:hover:active .fds-icon {
-  color: #1646aa;
+  color: #b83684;
 }
 .fds-checkbox {
   display: inline-block;
@@ -895,7 +895,7 @@ template {
   color: #bdbdbd;
 }
 .fds-checkbox-checked .fds-icon {
-  color: #6a98f6;
+  color: #f688b0;
 }
 .fds-dialog {
   border-radius: 16px;
@@ -1000,7 +1000,7 @@ template {
   position: relative;
   height: 100%;
   transition: width 0.2s;
-  background-color: #6a98f6;
+  background-color: #f688b0;
 }
 .fds-drawer .fds-drawer__open-icon {
   display: none;
@@ -1059,10 +1059,10 @@ template {
   color: #fff;
 }
 .fds-drawer__block-icon:hover {
-  color: #b7cbf6;
+  color: #ffdee4;
 }
 .fds-drawer__block-icon:hover .fds-icon {
-  color: #b7cbf6;
+  color: #ffdee4;
 }
 .fds-drawer__block-text .fds-icon {
   display: block;
@@ -1081,19 +1081,19 @@ template {
   color: #fff;
 }
 .fds-drawer__block.fds-drawer__block--hoverble:hover {
-  background-color: #4a7ee8;
+  background-color: #e365a2;
 }
 .fds-drawer__block.fds-drawer__block--selected {
   background-color: #dbe5fa;
 }
 .fds-drawer__block.fds-drawer__block--selected.fds-drawer__block
   .fds-drawer__block-text {
-  color: #6a98f6;
+  color: #f688b0;
 }
 .fds-drawer__block.fds-drawer__block--selected.fds-drawer__block
   .fds-drawer__block-text
   .fds-icon {
-  color: #6a98f6;
+  color: #f688b0;
 }
 .fds-dropdown-menu {
   position: absolute;
@@ -1226,7 +1226,7 @@ template {
   border-color: #e0e0e0;
 }
 .fds-form-input:focus {
-  border-color: #6a98f6;
+  border-color: #f688b0;
   outline: none;
   background: #fff;
 }
@@ -1236,7 +1236,7 @@ template {
     drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.2));
   border-width: 1px;
   border-style: solid;
-  border-color: #6a98f6;
+  border-color: #f688b0;
 }
 .fds-form-input__notification {
   display: flex;
@@ -1301,7 +1301,7 @@ template {
   align-items: center;
   color: #ffffff;
   padding: 12px 24px;
-  background: #6a98f6;
+  background: #f688b0;
   height: 46px;
 }
 .fds-header .fds-btn--text {
@@ -1358,7 +1358,7 @@ template {
   color: #d50000;
 }
 .fds-label--highlighted {
-  color: #6a98f6;
+  color: #f688b0;
 }
 .fds-logo {
   display: block;
@@ -1461,7 +1461,7 @@ template {
 .fds-pagination__number:hover {
   cursor: pointer;
   color: #fff;
-  background: #4a7ee8;
+  background: #e365a2;
 }
 .fds-pagination__page-info {
   white-space: nowrap;
@@ -1508,7 +1508,7 @@ template {
   color: #bdbdbd;
 }
 .fds-radio-checked .fds-icon {
-  color: #6a98f6;
+  color: #f688b0;
 }
 .fds-table {
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
@@ -1624,7 +1624,7 @@ template {
 }
 .fds-table tbody .fds-table__tr:hover:active .fds-table__td {
   color: #fff;
-  background: #4a7ee8;
+  background: #e365a2;
 }
 .fds-table thead {
   font-weight: 700;
@@ -1661,7 +1661,7 @@ template {
   margin-right: 9px;
 }
 .fds-table__td-content .fds-table__td-content--icon .fds-icon {
-  color: #b7cbf6;
+  color: #ffdee4;
 }
 .fds-table__td-content--error-icon .fds-icon {
   color: #e65200;
@@ -1695,11 +1695,11 @@ template {
 }
 .fds-tabs--active-line {
   border-bottom: 2px solid;
-  border-color: #6a98f6;
+  border-color: #f688b0;
 }
 .fds-tabs--active-line .fds-tabs-icon .fds-icon,
 .fds-tabs--active-filled .fds-tabs-icon .fds-icon {
-  color: #6a98f6;
+  color: #f688b0;
 }
 .fds-tabs--disabled {
   pointer-events: none;
@@ -1731,12 +1731,12 @@ template {
   color: #616161;
 }
 .fds-tabs-badge--filled-active {
-  background: #6a98f6;
+  background: #f688b0;
   color: #fff;
 }
 .fds-tabs-badge--line {
   background: #dbe5fa;
-  color: #6a98f6;
+  color: #f688b0;
 }
 .fds-tabs-container {
   display: flex;
@@ -1764,11 +1764,11 @@ template {
 }
 .fds-tabs-label--active {
   font-weight: bold;
-  color: #6a98f6;
+  color: #f688b0;
 }
 .fds-tabs-label--active {
   font-weight: bold;
-  color: #6a98f6;
+  color: #f688b0;
 }
 .fds-tabs-label--disabled {
   color: #bdbdbd;
@@ -1786,9 +1786,9 @@ template {
   display: inline-flex;
 }
 .fds-tags--default {
-  color: #6a98f6;
+  color: #f688b0;
   border: 1px solid;
-  border-color: #6a98f6;
+  border-color: #f688b0;
 }
 .fds-tags--default:hover {
   color: rgba(106, 152, 246, 0.6);
@@ -1798,7 +1798,7 @@ template {
   color: rgba(106, 152, 246, 0.6);
 }
 .fds-tags--filled {
-  background: #6a98f6;
+  background: #f688b0;
   color: #fff;
   border: 1px solid;
 }
@@ -1819,7 +1819,7 @@ template {
   width: 12px;
 }
 .fds-tags__icon--default .fds-icon {
-  color: #6a98f6;
+  color: #f688b0;
 }
 .fds-tags__icon--filled .fds-icon {
   color: #fff;
