@@ -1376,15 +1376,15 @@ template {
 .fds-logo--horizontal {
   height: 40px;
   width: 411px;
-  background-image: url('../image/fds-logo-hor.svg');
+  /* background-image: url('../image/fds-logo-hor.svg'); */
 }
 .fds-logo--mark {
-  background-image: url('../image/fds-logo-mark.svg');
+  /* background-image: url('../image/fds-logo-mark.svg'); */
   height: 137px;
   width: 144px;
 }
 .fds-logo--vertical {
-  background-image: url('../image/fds-logo-ver.svg');
+  /* background-image: url('../image/fds-logo-ver.svg'); */
   height: 209px;
   width: 144px;
 }
@@ -1844,7 +1844,7 @@ template {
   padding: 32px;
 }
 .wrapper .fds-dialog-container {
-  background-image: url('../image/bg.png');
+  /* background-image: url('../image/bg.png'); */
   background-size: cover;
 }
 body {
