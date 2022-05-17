@@ -508,7 +508,7 @@ template {
 }
 .fds-badges--primary-faded-off {
 	color: #fff;
-	background: #ef4c9a;
+	background: #6a98f6;
 }
 .fds-badges--red {
 	color: #d50000;
@@ -635,7 +635,7 @@ template {
 	outline: none;
 	color: #fff;
 	border-color: #6a98f6;
-	background: #ef4c9a;
+	background: #6a98f6;
 }
 .fds-btn--small {
 	min-height: 24px;
@@ -687,7 +687,7 @@ template {
 .fds-btn-icon--square {
 	color: #fff;
 	border-color: #6a98f6;
-	background: #ef4c9a;
+	background: #6a98f6;
 }
 .fds-btn-icon--large {
 	width: 40px;
@@ -1003,7 +1003,7 @@ template {
 	min-height: 100vh;
 	height: 100%;
 	box-shadow: 2px 0px 5px 0px rgba(0, 0, 0, 0.1);
-	background-color: #ef4c9a;
+	background-color: #6a98f6;
 }
 .fds-drawer .fds-drawer__open-icon {
 	display: none;
@@ -1304,7 +1304,7 @@ template {
 	height: 46px;
 	display: flex;
 	color: #fff;
-	background: #ef4c9a;
+	background: #6a98f6;
 	align-items: center;
 }
 .fds-header .fds-btn--text {
@@ -1742,7 +1742,7 @@ template {
 }
 .fds-tabs-badge--filled-active {
 	color: #fff;
-	background: #ef4c9a;
+	background: #6a98f6;
 }
 .fds-tabs-badge--line {
 	color: #6a98f6;
@@ -1803,7 +1803,7 @@ template {
 .fds-tags--filled {
 	color: #fff;
 	border: 1px solid;
-	background: #ef4c9a;
+	background: #6a98f6;
 }
 .fds-tags:hover {
 	opacity: 0.6;
